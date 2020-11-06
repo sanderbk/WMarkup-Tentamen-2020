@@ -2,129 +2,331 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="Sander Baak" />
+    <meta
+      name="description"
+      content="WebMarkup Tentamen 2020, op deze website gebruik ik al mijn HTML & CSS skills om zo mijn tentamen te maken"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Solar, Power, InHolland, Tentamen"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I Want Solar Energy | How solar works</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/stylemobile.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>I Want Solar Energy | About</title>
   </head>
   <body>
-    <section hamburger>
-      <!--    Made by Erik Terwan    -->
-      <!--   24th of November 2015   -->
-      <!--        MIT License        -->
+    <section class="s-hamburger hamburger">
       <nav role="navigation">
-        <div id="menuToggle">
-          <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
+        <article id="menuToggle">
           <input type="checkbox" />
-
-          <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
           <span></span>
           <span></span>
           <span></span>
-
-          <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
           <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Info</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="https://erikterwan.com/" target="_blank"
-              ><li>Show me more</li></a
-            >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="eusolar.html">News</a></li>
+            <li>
+              <a class="active" href="howsolarworks.html"><em>About</em></a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
+        </article>
       </nav>
     </section>
     <header>
-      <img class="site-logo" src="img/logo.png" />
+      <img
+        class="site-logo"
+        alt="Site Logo"
+        title="Logo of Solar"
+        src="img/logo.png"
+      />
       <h1>InHolland solar energy</h1>
-      <h2>Make the world a better place</h2>
+      <h2><strong>Make the world a better place</strong></h2>
     </header>
-    <section navigation>
+    <section class="nav-section navigation">
       <nav class="nav-desktop">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="eusolar.html">News</a></li>
-          <li><a href="howsolarworks.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="button" href="index.html">Home</a></li>
+          <li><a class="button" href="eusolar.html">News</a></li>
+          <li><a class="button active" href="howsolarworks.html">About</a></li>
+          <li><a class="button" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </section>
-    <section class="how-articles" articles>
-      <article class="art art-how">
-        <h2>Solar panels</h2>
+
+    <section class="s-arts">
+      <article class="h-art h-a-6">
+        <h3>AC Power</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          veritatis vitae iure eius totam est suscipit cum illo non rem!
-          Repellendus aut quisquam eius incidunt vitae possimus id pariatur
-          repudiandae?
+          Alternating current (AC) is an electric current which periodically
+          reverses direction and changes its magnitude continuously with time in
+          contrast to direct current (DC) which flows only in one direction.
+          Alternating current is the form in which electric power is delivered
+          to businesses and residences, and it is the form of electrical energy
+          that consumers typically use when they plug kitchen appliances,
+          televisions, fans and electric lamps into a wall socket.
         </p>
       </article>
-      <article class="art art-how">
-        <h2>Charge controller</h2>
+
+      <article class="h-art h-a-5">
+        <h3>Inverter</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          veritatis vitae iure eius totam est suscipit cum illo non rem!
-          Repellendus aut quisquam eius incidunt vitae possimus id pariatur
-          repudiandae?
+          A solar inverter or PV inverter, is a type of electrical converter
+          which converts the variable direct current (DC) output of a
+          photovoltaic (PV) solar panel into a utility frequency alternating
+          current (AC) that can be fed into a commercial electrical grid or used
+          by a local, off-grid electrical network. It is a critical balance of
+          system (BOS)–component in a photovoltaic system, allowing the use of
+          ordinary AC-powered equipment.
         </p>
       </article>
-      <article class="art art-how">
-        <h2>Battery system</h2>
+
+      <article class="h-art h-a-4">
+        <h3>DC Power</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          veritatis vitae iure eius totam est suscipit cum illo non rem!
-          Repellendus aut quisquam eius incidunt vitae possimus id pariatur
-          repudiandae?
+          Direct current (DC) is the one directional or unidirectional flow of
+          electric charge. An electrochemical cell is a prime example of DC
+          power. Direct current may flow through a conductor such as a wire, but
+          can also flow through semiconductors, insulators, or even through a
+          vacuum as in electron or ion beams. The electric current flows in a
+          constant direction, distinguishing it from alternating current (AC). A
+          term formerly used for this type of current was galvanic current.[1]
         </p>
       </article>
-      <article class="art art-how">
-        <h2>DC Power</h2>
+
+      <article class="h-art h-a-3">
+        <h3>Battery System</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          veritatis vitae iure eius totam est suscipit cum illo non rem!
-          Repellendus aut quisquam eius incidunt vitae possimus id pariatur
-          repudiandae?
+          Battery size or capacity is measured in kWh (kilowatt-hours). This is
+          the amount of energy a battery can store, although the usable capacity
+          may differ from the total battery capacity. For example, a lithium
+          battery with 10kWh total capacity, may have its usable capacity
+          limited to 80% to increase lifespan. Therefore, only 8kWh of energy
+          can be discharged on a daily basis. However, often the last 20% is
+          available in emergencies, such as a prolonged blackout.
         </p>
       </article>
-      <article class="art art-how">
-        <h2>Inverter</h2>
+
+      <article class="h-art h-a-2">
+        <h3>Charge Controller</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          veritatis vitae iure eius totam est suscipit cum illo non rem!
-          Repellendus aut quisquam eius incidunt vitae possimus id pariatur
-          repudiandae?
+          Solar panels converts daylight into power. With solar charge
+          controllers are you able to get the best amount of power from your
+          solar panels. The controllers are able to work with different kind of
+          voltages 12V, 24V or 48V. The regulators are tweaking the solar power
+          with the batteries so you are able to get the maximum battery life out
+          of your batteries.
         </p>
       </article>
-      <article class="art art-how">
-        <h2>AC power</h2>
+
+      <article class="h-art h-a-1">
+        <h3>Solar Panels</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          veritatis vitae iure eius totam est suscipit cum illo non rem!
-          Repellendus aut quisquam eius incidunt vitae possimus id pariatur
-          repudiandae?
+          Solar panels have become more famous the last decade, it is a really
+          efficient and profitable source of power and i recommend everyone
+          getting a solar panel i'ts not only good for the economy it is also
+          really good for the environment. Not only does it give you more and
+          efficient power it also provides for aesthetics on your roof. This
+          site gives you more information and recommended products to start
+          using your own solar panel today.
         </p>
       </article>
-      <article class="art art-how">
-        <h2>Products</h2>
+
+      <article class="box-sh-new aside-art art a-a-1">
+        <a
+          href="https://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V "
+        >
+          <img
+            class="box-sh-new article-image"
+            alt="product 1"
+            title="Product"
+            src="img/product-victron-energy.png"
+          />
+        </a>
+        <h3>Victron SmartSolar MPPT 150-35 12V 24V 48V charge controller</h3>
+
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          veritatis vitae iure eius totam est suscipit cum illo non rem!
-          Repellendus aut quisquam eius incidunt vitae possimus id pariatur
-          repudiandae?
+          A solar charger gathers energy from your solar panels, and stores it
+          in your batteries. Using the latest, fastest technology, SmartSolar
+          maximises this energy-harvest, driving it intelligently to achieve
+          full charge in the shortest possible time. SmartSolar maintains
+          battery health, extending its life.
         </p>
+        <a
+          class="button box-sh-new button-cookie-decline"
+          href="https://www.victronenergy.com/solar-charge-controllers/smartsolar-100-30-100-50 "
+        >
+          More info
+        </a>
+        <a
+          class="button box-sh-new button-cookie-accept"
+          href="https://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V "
+        >
+          Order product
+        </a>
       </article>
+      <article class="box-sh-new aside-art art a-a-2">
+        <a href="https://www.ikwilzonneenergie.nl/SMA-Sunny-Boy-SB36-omvormer">
+          <img
+            class="article-image box-sh-new"
+            alt="product 2"
+            title="Product"
+            src="img/product-sunny-boy.jpg"
+          />
+        </a>
+        <h3>SMA SB3.6 Solar panels inverter 1 phase</h3>
+        <p>
+          Thanks to its integrated web interface for easy commissioning via a
+          smartphone or tablet and SMA Smart Connected service, this inverter
+          offers true ease and comfort for PV system operators and installers.
+        </p>
+        <a
+          class="button box-sh-new button-cookie-decline"
+          href="https://www.sma.de/en/products/solarinverters/sunny-boy-30-36-40-50-60.html "
+        >
+          More info
+        </a>
+        <a
+          class="button box-sh-new button-cookie-accept"
+          href="https://www.ikwilzonneenergie.nl/SMA-Sunny-Boy-SB36-omvormer"
+        >
+          Order product
+        </a>
+      </article>
+      <article class="aside-art box-sh-new art a-a-3">
+        <a
+          href="https://www.ikwilzonneenergie.nl/175Wp-12Volt-zonne-energie-set"
+        >
+          <img
+            class="article-image box-sh-new"
+            alt="product 3"
+            title="Product"
+            src="img/product-steca.jpg"
+          />
+        </a>
+        <h3>Victron 175Wp 12Volt Solar panel set</h3>
+        <p>
+          Solar charge controllers Steca Solarix 2525 and 4040 are newly
+          developed products based on the internationally renowned controller
+          family Steca PR. With increased module and load current, the
+          controllers are now also suitable for even larger systems. The devices
+          also feature an integrated USB charging port for charging smartphones
+          and tablets. Use of the latest charging technologies combined with
+          state of charge determination enable optimal battery maintenance and
+          module power monitoring. A large display informs the user about all
+          operating modes with the aid of symbols. The state of charge is
+          represented visually as a level meter. Data such as voltage, current
+          and state of charge can also be displayed digitally as figures on the
+          display. In addition, the controller has an energy meter which can be
+          reset by the user.
+        </p>
+        <a
+          class="button box-sh-new button-cookie-decline"
+          href="https://www.steca.com/index.php?Steca-Solarix-en"
+        >
+          More info
+        </a>
+        <a
+          class="button box-sh-new button-cookie-accept"
+          href="https://www.ikwilzonneenergie.nl/175Wp-12Volt-zonne-energie-set"
+        >
+          Order product
+        </a>
+      </article>
+    </section>
+
+    <section class="footer">
+      <footer class="footer-homepage">
+        <p>&copy;Solar Energy 2020</p>
+        <p>All rights reserved to Sander Baak student of InHolland.</p>
+      </footer>
+    </section>
+    <section id="s-c" class="s-cookies cookie">
+      <p class="fixed-cookie-box">
+        On this site we use cookies please accept out cookies to get full
+        functionality of the site.
+        <a href="#s-c" class="button button-cookie-accept">Accept</a>
+        <a href="#s-c" class="button button-cookie-decline">Decline</a>
+      </p>
     </section>
   </body>
 </html>

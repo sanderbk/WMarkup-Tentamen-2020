@@ -1,0 +1,4 @@
+Student name: Sander Baak
+Student number: 666226
+Student class: HAINF1C
+URL student GitHub repository: https://github.com/sanderbk/WMarkup-Tentamen-2020
